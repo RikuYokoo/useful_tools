@@ -1,0 +1,1 @@
+results=`find ~/ -name *weights`; for i in ${results}; do  echo $i ;  rm -i $i ;done
