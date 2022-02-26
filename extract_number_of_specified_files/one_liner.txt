@@ -1,0 +1,1 @@
+file_num=`ls | wc -w`; dir_num=$((file_num/15));echo ${dir_num}; for i in `seq 1 $dir_num` ; do echo $i ; mkdir img_$i ;done  ; rand_file=`ls  | sort -R`; num=0; for i in $rand_file ; do cp $i img_$((${num}%${dir_num}+1)); let num=num+1 ;done
