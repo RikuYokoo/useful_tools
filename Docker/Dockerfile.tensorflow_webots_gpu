@@ -1,0 +1,29 @@
+FROM cyberbotics/webots:R2022a-ubuntu20.04
+
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub
+RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
+
+RUN apt-get update && apt-get install -y \
+		git \ 
+		vim \
+		software-properties-common \
+		cmake \
+		wget \
+		build-essential \
+		libopenmpi-dev \
+		zlib1g-dev zip \
+	&& apt-get clean \
+	&& rm -rf /var/lib/apt/lists/*
+
+RUN add-apt-repository ppa:deadsnakes/ppa -y \
+	&& apt update && apt install -y python3.7 python3.7-dev python3.7-lib2to3 python3.7-distutils python3.7-gdbm python3.7-tk && rm -rf /var/lib/apt/lists/*
+
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 0
+
+RUN apt update && apt install -y python3-pip && rm -rf /var/lib/apt/lists/*
+RUN pip install tensorflow-gpu==1.14.0 gym==0.15.3 Numpy==1.17.2 pandas==0.25.2 stable-baselines==2.8.0 imageio==2.9.0 control transforms3d stable_baselines[mpi] protobuf==3.20
+
+workdir /GankenKun_webots
+
+cmd ["/bin/bash"]
