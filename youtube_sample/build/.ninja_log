@@ -1,0 +1,22 @@
+# ninja log v5
+0	118	1693896751690380633	youtube_sample_autogen/timestamp	e5b66f754a85f3b5
+0	118	1693896751690380633	youtube_sample_autogen/mocs_compilation.cpp	e5b66f754a85f3b5
+0	118	1693896751690380633	/home/riku26/work/Qt/youtube_sample/youtube_sample/build/youtube_sample_autogen/timestamp	e5b66f754a85f3b5
+0	118	1693896751690380633	/home/riku26/work/Qt/youtube_sample/youtube_sample/build/youtube_sample_autogen/mocs_compilation.cpp	e5b66f754a85f3b5
+119	606	1693896752182380630	CMakeFiles/youtube_sample.dir/video.cpp.o	1a1b953ff7cc338d
+118	742	1693896752314380629	CMakeFiles/youtube_sample.dir/youtube_sample_autogen/mocs_compilation.cpp.o	b42cf0886db9a089
+118	743	1693896752318380629	CMakeFiles/youtube_sample.dir/main.cpp.o	c0745e4e0b595857
+118	750	1693896752330380629	CMakeFiles/youtube_sample.dir/mainwindow.cpp.o	859556a83d44d815
+750	917	1693896752490380628	youtube_sample	f344d1b994043e3d
+12	60	1694186026399761184	youtube_sample_autogen/timestamp	e5b66f754a85f3b5
+12	60	1694186026399761184	youtube_sample_autogen/mocs_compilation.cpp	e5b66f754a85f3b5
+12	60	1694186026399761184	/home/riku26/work/Qt/youtube_sample/youtube_sample/build/youtube_sample_autogen/timestamp	e5b66f754a85f3b5
+12	60	1694186026399761184	/home/riku26/work/Qt/youtube_sample/youtube_sample/build/youtube_sample_autogen/mocs_compilation.cpp	e5b66f754a85f3b5
+61	711	1694186027051643255	CMakeFiles/youtube_sample.dir/mainwindow.cpp.o	859556a83d44d815
+711	893	1694186027231610700	youtube_sample	f344d1b994043e3d
+2	34	1694186766851547650	youtube_sample_autogen/timestamp	e5b66f754a85f3b5
+2	34	1694186766851547650	youtube_sample_autogen/mocs_compilation.cpp	e5b66f754a85f3b5
+2	34	1694186766851547650	/home/riku26/work/Qt/youtube_sample/youtube_sample/build/youtube_sample_autogen/timestamp	e5b66f754a85f3b5
+2	34	1694186766851547650	/home/riku26/work/Qt/youtube_sample/youtube_sample/build/youtube_sample_autogen/mocs_compilation.cpp	e5b66f754a85f3b5
+35	541	1694186767359537351	CMakeFiles/youtube_sample.dir/mainwindow.cpp.o	859556a83d44d815
+541	715	1694186767531533858	youtube_sample	f344d1b994043e3d
