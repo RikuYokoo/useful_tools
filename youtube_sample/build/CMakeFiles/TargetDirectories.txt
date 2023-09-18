@@ -1,5 +1,0 @@
-/home/riku26/work/Qt/youtube_sample/youtube_sample/build/CMakeFiles/youtube_sample.dir
-/home/riku26/work/Qt/youtube_sample/youtube_sample/build/CMakeFiles/edit_cache.dir
-/home/riku26/work/Qt/youtube_sample/youtube_sample/build/CMakeFiles/rebuild_cache.dir
-/home/riku26/work/Qt/youtube_sample/youtube_sample/build/CMakeFiles/youtube_sample_autogen_timestamp_deps.dir
-/home/riku26/work/Qt/youtube_sample/youtube_sample/build/CMakeFiles/youtube_sample_autogen.dir
