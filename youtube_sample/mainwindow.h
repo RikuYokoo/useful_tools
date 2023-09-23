@@ -27,6 +27,12 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QMediaPlayer *player;
+    //QMediaPlayer *player1;
     Video *video;
+    //Video *video2;
+    QList<Video*> video_list;
+    QList<QMediaPlayer*> player_list;
+protected:
+    bool eventFilter(QObject* obj, QEvent* event);
 };
 #endif // MAINWINDOW_H
