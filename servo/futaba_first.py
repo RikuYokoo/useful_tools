@@ -10,9 +10,17 @@ GPIO.setup(pin1_pwm, GPIO.OUT)
 
 pwm = GPIO.PWM(pin1_pwm, 50) #(pin, Hz)
 
-pwm.start(10)
-time.sleep(1)
-pwm.ChangeFrequency(20)
-time.sleep(1)
-pwm.ChangeFrequency(30)
-time.sleep(1)
+pwm.start(0)
+time.sleep(2)
+
+print("first")
+pwm.ChangeDutyCycle(2)
+time.sleep(2)
+print("second")
+pwm.ChangeDutyCycle(7)
+time.sleep(2)
+print("third")
+pwm.ChangeDutyCycle(2)
+time.sleep(2)
+
+GPIO.cleanup()
