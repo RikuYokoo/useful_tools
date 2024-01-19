@@ -27,7 +27,7 @@ private:
   std::string capture_save_path;
 
 };
-SaveImage::SaveImage(const cameraType &camera_type): image_count_(0), camera_type_(camera_type_), capture_save_path("")
+SaveImage::SaveImage(const cameraType &camera_type): image_count_(0), camera_type_(camera_type), capture_save_path("")
 {
   createSaveDirectory();
 }
