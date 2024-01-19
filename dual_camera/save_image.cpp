@@ -57,9 +57,9 @@ void SaveImage::saveCapturedImage(const cv::Mat &img)
 			std::stringstream ss;
 			ss << capture_save_path << "/" << std::setw(6) << std::setfill('0') << image_count_ << ".jpg";
 			image_count_++;
-			cv::Mat save_img;
-			cv::cvtColor(img, save_img, cv::COLOR_YCrCb2BGR);
-			cv::imwrite(ss.str().c_str(), save_img);
+			//cv::Mat save_img;
+			//cv::cvtColor(img, save_img, cv::COLOR_YCrCb2BGR);
+			cv::imwrite(ss.str().c_str(), img);
 }
 
 
