@@ -88,8 +88,22 @@ int main(int argc, char* argv[])
       return -1;
     }
 
+    std::vector<cv::Mat> img_vec;
+    img_vec.push_back(frame0);
+    img_vec.push_back(frame1);
+    cv::Mat pano;
+
+    cv::Stitcher::Mode mode = cv::Stitcher::PANORAMA;
+    cv::Ptr<cv::Stitcher> stitcher = cv::Stitcher::create(mode);
+    cv::Stitcher::Status status = stitcher->stitch(img_vec, pano);
+    if(status != cv::Stitcher::OK){
+      std::cout << "stitching error status code is "  << int(status) << std::endl;
+      pano = frame0;
+    }
+
     cv::imshow("camera 1", frame0);
     cv::imshow("camera 2", frame1);
+    cv::imshow("gousei", pano);
 
     int key = cv::waitKey(1);
     if(key == 'q')
